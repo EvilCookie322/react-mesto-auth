@@ -146,8 +146,9 @@ function App() {
 	}
 
 	function handleTokenCheck() {
-		if (localStorage.getItem("jwt")) {
-			checkToken(localStorage.getItem("jwt"))
+		const jwt = localStorage.getItem("jwt");
+		if (jwt) {
+			checkToken(jwt)
 				.then((res) => {
 					setUserEmail(res.data.email);
 					setLoggedIn(true);

@@ -1,5 +1,9 @@
 const BASE_URl = "https://auth.nomoreparties.co";
 
+const checkResponse = (response) => {
+	return response.ok ? response.json() : Promise.reject(response.json());
+};
+
 const registration = ({ email, password }) => {
 	return fetch(`${BASE_URl}/signup`, {
 		method: "POST",
@@ -7,9 +11,7 @@ const registration = ({ email, password }) => {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({ email, password }),
-	}).then((response) => {
-		return response.ok ? response.json() : Promise.reject(response.json());
-	});
+	}).then((response) => checkResponse(response));
 };
 
 const authorization = ({ email, password }) => {
@@ -19,9 +21,7 @@ const authorization = ({ email, password }) => {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({ email, password }),
-	}).then((response) => {
-		return response.ok ? response.json() : Promise.reject(response.json());
-	});
+	}).then((response) => checkResponse(response));
 };
 const checkToken = (token) => {
 	return fetch(`${BASE_URl}/users/me`, {
