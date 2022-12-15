@@ -1,0 +1,21 @@
+.footer {
+	padding-top: 26px;
+	padding-bottom: 60px;
+	grid-area: footer;
+}
+
+@media screen and (max-width: 950px) {
+	.footer {
+		margin-left: 40px;
+	}
+}
+
+@media screen and (max-width: 382px) {
+	.footer {
+		padding-top: 8px;
+		padding-bottom: 36px;
+		margin-left: 19px;
+		font-size: 14px;
+		line-height: calc(17 / 14);
+	}
+}

@@ -1,0 +1,13 @@
+.button {
+	box-sizing: border-box;
+	padding: 0;
+	border: 0;
+	outline: none;
+	background: none;
+	transition: opacity .5s ease-in-out;
+}
+
+.button:not([disabled]):hover {
+	opacity: .6;
+	cursor: pointer;
+}

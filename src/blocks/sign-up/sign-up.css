@@ -1,0 +1,12 @@
+.sign-up {
+	grid-area: content;
+	display: grid;
+	margin: 0 auto;
+	grid-template: min-content / 358px;
+}
+
+@media screen and (max-width: 618px) {
+	.sign-up {
+		grid-template-columns: 260px;
+	}
+}

@@ -1,0 +1,15 @@
+.header__nav {
+	padding-top: 8px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: calc(22 / 18);
+	display: flex;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 618px) {
+	.header__nav {
+		font-size: 14px;
+		line-height: calc(17 / 14);
+	}
+}

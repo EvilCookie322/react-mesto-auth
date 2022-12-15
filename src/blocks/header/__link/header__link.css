@@ -1,0 +1,17 @@
+.header__link {
+	margin-left: 24px;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+	.header__link {
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width: 382px) {
+	.header__link {
+		padding-right: 27px;
+	}
+}

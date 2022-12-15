@@ -1,0 +1,21 @@
+.content {
+	grid-area: content;
+	display: grid;
+	row-gap: 50px;
+	grid-auto-flow: row;
+	grid-template: auto / 1fr;
+}
+
+@media screen and (max-width: 950px) {
+	.content {
+		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.content {
+		row-gap: 36px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

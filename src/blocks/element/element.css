@@ -1,0 +1,10 @@
+.element {
+	position: relative;
+	display: grid;
+	grid-template: auto calc(361px - 282px) / 240px 44px;
+	border-radius: 10px;
+	overflow: hidden;
+	object-fit: cover;
+	color: #000;
+	background-color: #fff;
+}

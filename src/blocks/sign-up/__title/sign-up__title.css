@@ -1,0 +1,16 @@
+.sign-up__title {
+	margin: 20px 0 50px;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: calc(29 / 24);
+	text-align: center;
+}
+
+@media screen and (max-width: 618px) {
+	.sign-up__title {
+		margin-top: 0;
+		margin-bottom: 40px;
+		font-size: 20px;
+		line-height: calc(24 / 20);
+	}
+}
