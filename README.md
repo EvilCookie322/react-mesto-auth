@@ -18,7 +18,7 @@
 
 **Ссылки**
 
-- [Ссылка GH-Pages](https://evilcookie322.github.io/react-mesto-auth/index.html)
+- [Ссылка GH-Pages](https://evilcookie322.github.io/react-mesto-auth/)
 - [Ссылка на GitHub](https://github.com/EvilCookie322/react-mesto-auth)
 
 **Планы**
